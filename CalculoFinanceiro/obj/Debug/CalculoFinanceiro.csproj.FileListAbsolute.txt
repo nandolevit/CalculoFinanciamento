@@ -1,0 +1,18 @@
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.exe.config
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.exe
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.pdb
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.Form1.resources
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.Properties.Resources.resources
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.csproj.GenerateResource.cache
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.exe
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.pdb
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.csprojAssemblyReference.cache
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.exe.config
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.exe
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Debug\CalculoFinanceiro.pdb
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.csprojAssemblyReference.cache
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.Form1.resources
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.Properties.Resources.resources
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.csproj.GenerateResource.cache
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.exe
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Debug\CalculoFinanceiro.pdb

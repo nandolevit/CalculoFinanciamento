@@ -1,0 +1,17 @@
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.exe.config
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.exe
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.pdb
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.Form1.resources
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.Properties.Resources.resources
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.csproj.GenerateResource.cache
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.exe
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.pdb
+C:\Users\nando\source\repos\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.csprojAssemblyReference.cache
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.exe.config
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.exe
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\bin\Release\CalculoFinanceiro.pdb
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.Form1.resources
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.Properties.Resources.resources
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.csproj.GenerateResource.cache
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.exe
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.pdb
