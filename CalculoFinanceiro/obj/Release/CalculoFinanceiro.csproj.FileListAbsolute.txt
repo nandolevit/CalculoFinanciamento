@@ -15,3 +15,4 @@ C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinan
 C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.csproj.GenerateResource.cache
 C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.exe
 C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.pdb
+C:\Users\nando\OneDrive\Área de Trabalho\Sistema\CalculoFinanceiro\CalculoFinanceiro\obj\Release\CalculoFinanceiro.csprojAssemblyReference.cache

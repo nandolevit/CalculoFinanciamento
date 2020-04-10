@@ -119,40 +119,41 @@ namespace CalculoFinanceiro
             dataGridViewCalculo.Rows.Clear();
             //capital inicial
             double c = Convert.ToDouble(textBoxFinanciado.Text);
+            //tempo do financiamento ou seja parcelas
+            int t = Convert.ToInt32(textBoxParcela2.Text);
+            //juros
             double iD = 0;
             if (comboBoxJuros.SelectedIndex == 0)
                 iD = ConverterJuros(Convert.ToDouble(textBoxJuros.Text));
             else
                 iD = Convert.ToDouble(textBoxJuros.Text) / 100;
 
-            //tempo do financiamento ou seja parcelas
-            double t = Convert.ToDouble(textBoxParcela2.Text);
-            double j = Math.Pow((iD + 1), t);
-
-            //montante = calculo de amortização TabelaPrice
-            double m = c * ((j * iD) / (j - 1));
-            double devedor = c;
-
             DateTime d1 = new DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, 1);
             DateTime d2 = new DateTime(dateTimePicker2.Value.Year, dateTimePicker2.Value.Month, 1);
             TimeSpan span = d2 - d1;
+
             int mes = (span.Days / 30) - 1;
 
             if (mes < 0)
                 mes = 0;
 
+            //montante = calculo de amortização TabelaPrice
+            double pmt = CalcularParcela(c, iD, t, mes);
+            //double m = c * ((j * iD) / (j - 1));
+            double devedor = c;
+
             for (int i = 0; i < t; i++)
             {
-                double am = m - devedor * iD;
-                double ju = devedor * iD;
-                double saldo = devedor - (am + ju);
+                double j = devedor * iD;
+                double am = pmt - j;
+                double saldo = devedor - am;
 
                 string[] parc = new string[6];
                 parc[0] = "";
                 parc[1] = dateTimePicker2.Value.AddMonths(i).ToShortDateString();
-                parc[2] = CalcularJuros(c, Convert.ToDouble(textBoxJuros.Text), Convert.ToInt32(textBoxParcela2.Text), mes).ToString("C2");
+                parc[2] = pmt.ToString("C2");
                 parc[3] = am.ToString("C2");
-                parc[4] = ju.ToString("C2");
+                parc[4] = j.ToString("C2");
                 parc[5] = saldo < 0 ? 0.ToString("C2") : saldo.ToString("C2");
 
                 devedor -= am;
@@ -160,11 +161,11 @@ namespace CalculoFinanceiro
                 dataGridViewCalculo.ClearSelection();
             }
 
-            textBox180.Text = CalcularJuros(c, Convert.ToDouble(textBoxJuros180.Text), 180, mes).ToString("C2");
-            textBox150.Text = CalcularJuros(c, Convert.ToDouble(textBoxJuros150.Text), 150, mes).ToString("C2");
-            textBox120.Text = CalcularJuros(c, Convert.ToDouble(textBoxJuros120.Text), 120, mes).ToString("C2");
-            textBox90.Text = CalcularJuros(c, Convert.ToDouble(textBoxJuros90.Text), 90, mes).ToString("C2");
-            textBox60.Text = CalcularJuros(c, Convert.ToDouble(textBoxJuros60.Text), 60, mes).ToString("C2");
+            textBox180.Text = CalcularParcela(c, ConverterJuros(Convert.ToDouble(textBoxJuros180.Text)), 180, mes).ToString("C2");
+            textBox150.Text = CalcularParcela(c, ConverterJuros(Convert.ToDouble(textBoxJuros150.Text)), 150, mes).ToString("C2");
+            textBox120.Text = CalcularParcela(c, ConverterJuros(Convert.ToDouble(textBoxJuros120.Text)), 120, mes).ToString("C2");
+            textBox90.Text = CalcularParcela(c, ConverterJuros(Convert.ToDouble(textBoxJuros90.Text)), 90, mes).ToString("C2");
+            textBox60.Text = CalcularParcela(c, ConverterJuros(Convert.ToDouble(textBoxJuros60.Text)), 60, mes).ToString("C2");
 
             dataGridViewSinal.Rows.Clear();
             if (Convert.ToDecimal(textBoxSinal.Text) > 0)
@@ -182,12 +183,23 @@ namespace CalculoFinanceiro
             }
         }
 
-        private double CalcularJuros(double capital, double juros, int parc, int mes)
+        private double CalcularParcela(double capital, double juros, int parc, int mes)
         {
-            double j = ConverterJuros(juros);
-            double c = capital * ((Math.Pow((j + 1), parc) * j) / (Math.Pow((j + 1), parc) - 1));
+            double pmt = 0;
+            double pv = capital;
+            //se o juros for anual converte em mensal
+            double i = juros;
+            double n = parc;
+            pmt = pv * ((Math.Pow((1 + i), n) * i) / (Math.Pow((1 + i), n) - 1));
 
-            return c * Math.Pow((j + 1), mes);
+            ////se o juros for anual converte em mensal
+            //double j = comboBoxJuros.SelectedIndex == 0 ? ConverterJuros(juros) : juros;
+            ////calcula o valor da parcela
+            //double p = capital * ((Math.Pow((j + 1), parc) * j) / (Math.Pow((j + 1), parc) - 1));
+
+            //calcular o acréscimo quando a entrada for parcelada
+            double a = pmt * Math.Pow((i + 1), mes);
+            return a;
         }
 
         private double ConverterJuros(double j)
