@@ -185,18 +185,16 @@ namespace CalculoFinanceiro
 
         private double CalcularParcela(double capital, double juros, int parc, int mes)
         {
+            //valor do pagamento
             double pmt = 0;
+            //valor do financiamento
             double pv = capital;
-            //se o juros for anual converte em mensal
+            //taxa de juros
             double i = juros;
+            //número de parcelas
             double n = parc;
+            //cálculo de amortização
             pmt = pv * ((Math.Pow((1 + i), n) * i) / (Math.Pow((1 + i), n) - 1));
-
-            ////se o juros for anual converte em mensal
-            //double j = comboBoxJuros.SelectedIndex == 0 ? ConverterJuros(juros) : juros;
-            ////calcula o valor da parcela
-            //double p = capital * ((Math.Pow((j + 1), parc) * j) / (Math.Pow((j + 1), parc) - 1));
-
             //calcular o acréscimo quando a entrada for parcelada
             double a = pmt * Math.Pow((i + 1), mes);
             return a;
